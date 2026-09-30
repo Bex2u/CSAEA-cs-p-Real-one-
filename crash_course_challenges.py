@@ -83,27 +83,27 @@ first = "Ada"
 last = "Lovelace"
 school = "CSAEA"
 
-end = first + last + school
-end += "Hello, my name is "
-print(end)
+
 
 #9
 cart = [12, 5, 30, 8]
-# <Your Code Here>
+total_price = 0
+
+
 print()
 
 
 #10
 
 
-
+import time
 #11 - Done
 start = 10
 for start in range(10,0,-1):
     print(start)
+    time.sleep(1)
 
-print("Liftoff!")
-
+print("Liftoff!") 
 
 
 
