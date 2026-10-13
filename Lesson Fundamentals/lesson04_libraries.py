@@ -46,15 +46,116 @@ print()
 
 import random
 
-seed = 9987.5
+seed = 9000.9
 step1 = seed /6.7
-print(step1)
+(step1)
 step2 = step1 -800
-print(step2)
+(step2)
 step3 = step2%10
-print(step3)
+(step3)
 result = math.ceil(step3)
 print(result)
+
+seed = 76743
+
+
+
+for i in range(5):
+    calcs = seed + 2234 * 22 / 3
+    randint  = math.ceil(calcs) 
+    print(f"Simple random num gen: {randint % 10}")
+    seed += 1
+
+#Pythons random library
+
+import random
+
+random_integer  = random.randint(1,100)
+print (random_integer)
+
+random_float = random.random()
+print(random_float)
+
+my_list = ["taco", "burrito", "enchilada", "quesadilla"]
+random_selection = random.choice(my_list)
+print(random_selection)
+
+random.shuffle(my_list)
+print(my_list)
+
+# Challenge 2: Simulate a Die Roll
+# Use the random library to simulate rolling a six-sided die.
+# The output should be a random integer between 1 and 6.
+# Store the result in a variable called "die_roll" and print it.
+
+print()
+print("Challenge 2:")
+die_roll = random.randint(1,6)
+print(die_roll)
+
+# Challenge 3: Random Square Root
+# Use random.randint() to pick a number between 1 and 100. Store it in "num".
+# Use math.sqrt() to find its square root.
+# Print the number, its square root, and the square root rounded UP with math.ceil().
+
+num = random.randint(1,100)
+sqrt_num = math.sqrt(num)
+round_up_num = math.ceil(sqrt_num)
+print(f"Number: {num}\nSqrt of Number: {sqrt_num}\nRounded up Number {round_up_num}")
+
+# Challenge 4: Power Roll
+# Roll two dice with the random library: one is the "base," one is the "exponent."
+# Use math library to raise the base to the exponent. (ie, based to the POWer of exponent)
+# Print both rolls and the result as an integer (hint: int() removes the .0).
+print()
+base = random.randint(1,6)
+exponent = random.randint(1,6)
+number  = math.pow(base, exponent)
+print(int(number))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
