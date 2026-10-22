@@ -44,18 +44,25 @@ print("Length of sting:", length)
 # Enter your favorite quote: Those who believe in telekinetics, raise my hand.
 # Your quote is 48 characters long.
 
-d = input("What is your favorite quote?\n")
+# d = input("What is your favorite quote?\n")
 
-a = len(d)
-print(f"Your quote is {a} characters long.")
+# a = len(d)
+# print(f"Your quote is {a} characters long.")
 
 # Challenge 2:
 # Ask the user to enter a word that is at least 7 characters long. 
 # Print the 2nd through 6th characters.
 # Use string slicing.
 
-word_a  = input("Enter a word that is at least 7 characters long.\n")
-print(f"The second and sixth characters are", {word_a[1:5]})
+# character  = "spOngEbOB SQuArePaNts"
+# print("\nLowercase:", character.lower())
+
+# word_a  = input("Enter a word that is at least 7 characters long.\n")
+# print(f"The second and sixth characters are", {word_a[1:5]})
+
+
+
+
 
 # Challenge 3: Name Formatter
 # Ask the user for their first and last name, then format it as "Last, First".
@@ -65,12 +72,52 @@ print(f"The second and sixth characters are", {word_a[1:5]})
 # Enter your last name: Lovelace
 # Formatted name: Lovelace, Ada
 
-first  = input("Enter your first name:")
-last = input("Enter your last name:")
-print(f"Formatted name: {first, last}")
+# first  = input("Enter your first name:")
+# last = input("Enter your last name:")
+# print(f"Formatted name: {first, last}")
 
+character  = "spOngEbOB SQuArePaNts"
+print("\nLowercase:", character.lower())
 
+print("\nLowercase:", character.lower())
+print("Uppercase:", character.upper())
+print("Capitalize first letter:", character.capitalize())
+print("Title format:", character.title())
 
+print()
+
+#find and replace text
+sentence = "I am not with him."
+new_sentence = sentence.replace("I am", "You're")
+print(sentence)
+print(new_sentence)
+
+#JOIN AND SPLIT
+groceries = "milk,eggs,bread,butter,peanuts"
+print("\nOriginal string: ", groceries)
+
+#Split the string into a Python list, based on a 'delimiter'
+items = groceries.split(",")
+print(items)
+
+# Join a Python list back together into a sting
+joined = " and ".join(items)
+print(joined)
+print(type(items))
+print(type(joined))
+
+# Challenge 4: Word Mutation
+# Ask for a word and print it backwards, in uppercase, and lowercase.
+# Example output
+# Enter a word: Python
+# Uppercase: PYTHON
+# Lowercase: python
+# In reverse: nohtyP
+
+word = input("Enter a word: ")
+print("Uppercase:", word.upper())
+print("Lowercase:", word.lower())
+print("In reverse:", word[::-1])
 
 
 
